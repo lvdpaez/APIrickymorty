@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="shortcut icon" href="img/rick and morty.ico" type="image/x-icon">
+    <title>THE RICK AND MORTY API</title>
+    
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">RICK AND MORTY </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link active" aria-current="page" href="#">Personajes</a>
+          <a class="nav-link" href="#">Episodios</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <select name="pagina" id="pagina" onchange="apiRick(this.value)">
+<script>
+    for (let i=1; i <=42;i++){
+        document.write(`<option value="${i}</option>`);
+    }
+</script>
+</select>
+<div id="resultado">
+</div>
+<h1>PERSONAJES</h1>
+    <main>
+      <article>
+        <div class="image-container">
+        <img  src="https://rickandmortyapi.com/api/character/avatar/703.jpeg" alt="personaje">
+        </div>
+        <h2>personajes</h2>
+         <span>estado de personajes</span>
+        </article>
+        
+        <article>
+         <div class="image-container">
+        <img  src="https://rickandmortyapi.com/api/character/avatar/93.jpeg" alt="personaje">
+        </div>
+        <h2>personajes</h2>
+        <span>estado de personajes</span>
+         </article>
+        
+         <article>
+        <div class="image-container">
+          <img  src="https://rickandmortyapi.com/api/character/avatar/817.jpeg" alt="personaje">
+        </div>
+        <h2>personajes</h2>
+        <span>estado de personajes</span>
+        </article>
+        
+         <article>
+         <div class="image-container">
+         <img  src="https://rickandmortyapi.com/api/character/avatar/1.jpeg" alt="personaje">
+        </div>
+        <h2>personajes</h2>
+         <span>estado de personajes</span>
+          </article>
+
+          <article>
+            <div class="image-container">
+            <img  src="https://rickandmortyapi.com/api/character/avatar/595.jpeg" alt="personaje">
+           </div>
+           <h2>personajes</h2>
+            <span>estado de personajes</span>
+             </article>
+
+             <article>
+              <div class="image-container">
+              <img  src="https://rickandmortyapi.com/api/character/avatar/563.jpeg" alt="personaje">
+             </div>
+             <h2>personajes</h2>
+              <span>estado de personajes</span>
+               </article>
+
+
+
+          </main>
+
+
+  <script src="/js/api.js"></script>
+  <script src="./js/rick.js"></script>
+</body>
+</html>
